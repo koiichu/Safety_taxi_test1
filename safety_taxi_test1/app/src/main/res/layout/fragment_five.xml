@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.tabbar6.Tab5_report.Five_Fragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbar"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/Text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="เลขทะเบียน"
+                android:textColor="#4d4d4d"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/license_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="หมายเลขทะเบียนรถแท็กซี่ (ทท1234)"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/Text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="สีรถแท็กซี่"
+                android:textColor="#4d4d4d"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="8"
+                    android:hint="อื่นๆ"
+                    android:textAlignment="center"
+                    android:id="@+id/other" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/Text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="เส้นทางของคุณ"
+                android:textColor="#4d4d4d"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/start_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:hint="จุดเริ่มต้น"
+                    android:textAlignment="center"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_send_grey600_48dp" />
+
+                <EditText
+                    android:id="@+id/end_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ems="7"
+                    android:hint="จุดหมาย"
+                    android:textAlignment="center"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="ความประพฤติ"
+                android:textColor="#4d4d4d"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="เลือกได้มากกว่า 1 ข้อ"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkBox_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:checked="false"
+                    android:text="ขับรถเร็ว"
+                    android:textColor="#4d4d4d"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:checked="false"
+                    android:text="ไม่สุภาพ"
+                    android:textColor="#4d4d4d"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:checked="false"
+                    android:text="ลวนลาม"
+                    android:textColor="#4d4d4d"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:checked="false"
+                    android:text="New CheckBox"
+                    android:textColor="#4d4d4d"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="ความพึงพอใจ"
+                android:textColor="#4d4d4d"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/report_submit"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bt_yellow"
+                android:text="Report" />
+
+            <EditText
+                android:id="@+id/comment_in"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="ข้อมูลเพิ่มเติม"
+                android:inputType="textMultiLine"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

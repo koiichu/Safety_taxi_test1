@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myview"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:background="#ffffff">
+
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="12:00"
+        android:layout_marginRight="5dip"
+        android:textSize="12dp"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"
+        android:layout_gravity="right" />
+
+    <!-- License-->
+    <TextView
+        android:id="@+id/list_license"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="ทท1234" />
+
+    <LinearLayout
+        android:id="@+id/view_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- Chechbox -->
+                <TextView
+                    android:id="@+id/list_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/list_license"
+                    android:textColor="#343434"
+                    android:textSize="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="one, two, three" />
+            </TableRow>
+
+            <TableRow>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- Commennt -->
+                <TextView
+                    android:id="@+id/list_comment"
+                    android:layout_width="286dp"
+                    android:layout_height="22dp"
+                    android:layout_below="@id/list_license"
+                    android:textColor="#afaeae"
+                    android:textSize="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="comment any things" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+        <RatingBar
+            android:id="@+id/list_ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textStyle="bold"
+        android:id="@+id/username_report"
+        android:layout_gravity="right"
+        android:textColor="#5bac05" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.tabbar6.Tab3_fake_call.Three_Fragment">
+
+    <TextView
+        android:id="@+id/calltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="สายเรียกเข้าจาก"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#aeaeae"/>
+
+    <EditText
+        android:id="@+id/edit_NameCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:textColorHint="#dfdfdf"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_Call"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/bt_yellow"
+        android:checked="true"
+        android:onClick="onCallClick"
+        android:text="CALL NOW"
+        android:textColor="#ffffff"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bt_Call2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/bt_yellow"
+        android:checked="true"
+        android:onClick="onCallClick2"
+        android:text="อีก 30 วินาที"
+        android:textColor="#ffffff"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/bt_Call3"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/bt_yellow"
+        android:checked="true"
+        android:onClick="onCallClick3"
+        android:text="อีก 5 นาที"
+        android:textColor="#ffffff"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bt_Call4"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/bt_yellow"
+        android:checked="true"
+        android:onClick="onCallClick4"
+        android:text="อีก 30 นาที"
+        android:textColor="#ffffff"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/bt_Call5"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/bt_yellow"
+        android:checked="true"
+        android:onClick="onCallClick5"
+        android:text="อีก 1 ชั่วโมง"
+        android:textColor="#ffffff"
+        android:textOff=""
+        android:textOn=""
+        android:textSize="25sp" />
+
+</RelativeLayout>

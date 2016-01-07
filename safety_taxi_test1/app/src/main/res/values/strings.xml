@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SAFETY TAXI</string>
+    <string name="section_format">Hello : %1$d</string>
+    <string name="action_user">ผู้ใช้งาน</string>
+    <string name="action_history">ประวัติผู้ใช้งาน</string>
+    <string name="action_settings">การตั้งค่า</string>
+    <string name="action_logout">ออกจากระบบ</string>
+    <string name="dialog_sos">ฉันอยู่ที่นี่ : .........</string>
+
+    <string name="regis">ลงทะเบียน</string>
+    <string name="reset">ลืมรหัสผ่าน</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

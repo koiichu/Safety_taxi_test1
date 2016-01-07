@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dummyfrag_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="test.tabbar6.Two_Fragmen">
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/dummyfrag_scrollableview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /> -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoStart"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/transparent"
+                    android:hint="Choose a starting point..." />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/dotted" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoDestination"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="Choose a destination..." />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:onClick="sendRequest"
+                android:background="@drawable/ic_send_grey600_48dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/cardview"
+        android:background="@drawable/bg_meter">
+
+        <TextView
+            android:id="@+id/PriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:text="Meter"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/PriceCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PriceText"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="90dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/PriceCal"
+            android:layout_marginBottom="28dp"
+            android:layout_toEndOf="@+id/PriceCal"
+            android:layout_toRightOf="@+id/PriceCal"
+            android:text="฿"
+            android:textSize="40dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:background="#e1dede">
+
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance"
+            android:textSize="20dp"
+            android:id="@+id/DistanceText"
+            android:layout_marginLeft="30dp"
+            android:layout_above="@+id/DistanceCal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:layout_marginLeft="30dp"
+            android:text="0.0"
+            android:id="@+id/DistanceCal"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Km"
+            android:id="@+id/Km"
+            android:layout_alignBaseline="@+id/DistanceCal"
+            android:layout_alignBottom="@+id/DistanceCal"
+            android:layout_toRightOf="@+id/DistanceCal"
+            android:layout_toEndOf="@+id/DistanceCal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Time"
+            android:id="@+id/TimeText"
+            android:layout_alignTop="@+id/DistanceText"
+            android:layout_toRightOf="@+id/Km"
+            android:layout_toEndOf="@+id/Km"
+            android:layout_marginLeft="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="50dp"
+            android:id="@+id/TimeCal"
+            android:layout_below="@+id/TimeText"
+            android:layout_alignLeft="@+id/TimeText"
+            android:layout_alignStart="@+id/TimeText" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min"
+            android:id="@+id/Min"
+            android:layout_alignBaseline="@+id/TimeCal"
+            android:layout_alignBottom="@+id/TimeCal"
+            android:layout_toRightOf="@+id/TimeCal"
+            android:layout_toEndOf="@+id/TimeCal" />
+
+            -->
+
+        <View
+            android:id="@+id/imageView"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_linet" />
+
+        <TextView
+            android:id="@+id/DistanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Distance"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/DistanceCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DistanceText"
+            android:layout_alignStart="@+id/DistanceText"
+            android:layout_centerVertical="true"
+            android:text="0.0"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/Km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/DistanceCal"
+            android:layout_alignBottom="@+id/DistanceCal"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/DistanceCal"
+            android:layout_toRightOf="@+id/DistanceCal"
+            android:text="Km"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/TimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="Time"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/TimeCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TimeText"
+            android:layout_alignStart="@+id/TimeText"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/Min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TimeCal"
+            android:layout_alignBottom="@+id/TimeCal"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/TimeCal"
+            android:layout_toRightOf="@+id/TimeCal"
+            android:text="Min"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
