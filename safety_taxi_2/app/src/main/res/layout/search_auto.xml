@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="safetytaxi.parsetest.AutoComplete">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="License :"
+        android:id="@+id/license_in"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter license to find"
+        android:id="@+id/autoComplete"
+        android:layout_below="@+id/license_in"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/report_query" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search2"
+        android:id="@+id/report_query"
+        android:layout_alignBottom="@+id/autoComplete"
+        android:layout_alignParentEnd="true" />
+
+    <!-- listview -->
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_report"
+        android:layout_below="@+id/show"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

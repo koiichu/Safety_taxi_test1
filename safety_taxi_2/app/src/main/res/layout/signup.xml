@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.tabbar6.Signup">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:titleTextAppearance="@string/regis"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="593dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal|bottom"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="กรุณากรอกข้อมูลให้ครบถ้วน"
+            android:textSize="20sp"
+            android:textColor="#747474"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"/>
+
+        <EditText
+
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="ชื่อผู้ใช้งาน"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/textcolorhint"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="รหัสผ่าน (8 ตัวขึ้นไป)"
+            android:inputType="textPassword"
+            android:textColorHint="@color/textcolorhint"
+            android:textSize="25sp" />
+
+        <EditText
+
+            android:id="@+id/con_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="ยืนยันรหัสผ่าน"
+            android:inputType="textPassword"
+            android:textColorHint="@color/textcolorhint"
+            android:textSize="25sp" />
+
+        <EditText
+
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/textcolorhint"
+            android:textSize="25sp" />
+
+        <EditText
+
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColorHint="@color/textcolorhint"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/bt_Regis"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bt_regis"
+            android:onClick="clickSignUp"
+            android:shadowColor="#281808"
+            android:textColor="#006c65" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:padding="20dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/bt_back"
+        android:background="@drawable/bt_back"
+        android:layout_gravity="left|top" />
+
+</FrameLayout>
